@@ -31,7 +31,11 @@ keyword1 = st_tags_sidebar(label='# Get a near match to an individual case:',
 
 st.sidebar.write("### profile")
 st.sidebar.write((keyword1))
-
+with st.expander('click to see a tutorial'):
+    st.write('how to use the site...')
+    st.write('objectives')
+    st.write('sample usage')
+    
 transl=np.array(('t(8;14)','t(14;18)','t(11;14)','t(2;8)'))
 lymphs =np.array(('Burkitts','Follicular','Mantle Cell','Burkitts'))
 descr = np.array(('starry sky','giant follicle','giant mantle zone','starry sky'))
